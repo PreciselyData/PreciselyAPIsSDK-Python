@@ -1,16 +1,16 @@
-# com.precisely.apis.TypeaheadServiceApi
+# com.precisely.apis.AddressAutocompleteServiceApi
 
 All URIs are relative to *https://api.precisely.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**search_v2**](TypeaheadServiceApi.md#search_v2) | **GET** /typeahead/v1/locations | Typeahead Search
+[**search_v2**](AddressAutocompleteServiceApi.md#search_v2) | **GET** /typeahead/v1/locations | Address Autocomplete Search
 
 
 # **search_v2**
 > TypeaheadLocations search_v2(search_text)
 
-Typeahead Search
+Address Autocomplete Search
 
 Performs search to retrieve list of places by input text and location vicinity.
 
@@ -21,7 +21,7 @@ Performs search to retrieve list of places by input text and location vicinity.
 ```python
 import time
 import com.precisely.apis
-from com.precisely.apis.api import typeahead_service_api
+from com.precisely.apis.api import address_autocomplete_service_api
 from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.typeahead_locations import TypeaheadLocations
 from pprint import pprint
@@ -45,7 +45,7 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # Enter a context with an instance of the API client
 with com.precisely.apis.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = typeahead_service_api.TypeaheadServiceApi(api_client)
+    api_instance = address_autocomplete_service_api.AddressAutocompleteServiceApi(api_client)
     search_text = "searchText_example" # str | The input to be searched.
     latitude = "latitude_example" # str | Latitude of the location. We need to make sure that either Lat/Lng or Country is provided to API (optional)
     longitude = "longitude_example" # str | Longitude of the location. We need to make sure that either Lat/Lng or Country is provided to API (optional)
@@ -66,20 +66,20 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        # Typeahead Search
+        # Address Autocomplete Search
         api_response = api_instance.search_v2(search_text)
         pprint(api_response)
     except com.precisely.apis.ApiException as e:
-        print("Exception when calling TypeaheadServiceApi->search_v2: %s\n" % e)
+        print("Exception when calling AddressAutocompleteServiceApi->search_v2: %s\n" % e)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        # Typeahead Search
+        # Address Autocomplete Search
         api_response = api_instance.search_v2(search_text, latitude=latitude, longitude=longitude, search_radius=search_radius, search_radius_unit=search_radius_unit, max_candidates=max_candidates, country=country, match_on_address_number=match_on_address_number, auto_detect_location=auto_detect_location, ip_address=ip_address, area_name1=area_name1, area_name3=area_name3, post_code=post_code, return_admin_areas_only=return_admin_areas_only, include_ranges_details=include_ranges_details, search_type=search_type, search_on_address_number=search_on_address_number)
         pprint(api_response)
     except com.precisely.apis.ApiException as e:
-        print("Exception when calling TypeaheadServiceApi->search_v2: %s\n" % e)
+        print("Exception when calling AddressAutocompleteServiceApi->search_v2: %s\n" % e)
 ```
 
 
