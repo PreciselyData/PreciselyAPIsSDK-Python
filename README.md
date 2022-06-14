@@ -70,14 +70,15 @@
 * [Phone Verification](https://developer.precisely.com/apis/phoneverification): The Phone Verification API accepts any phone number as input and returns verification information, Service Provider name, and more. Useful to verify if phone numbers exist to reduce fraud and improve communications.
 
 The following platforms are supported by Precisely SDKs:
-* [Android](https://developer.precisely.com/apis/docs/index.html#Android%20SDK/android_intro.html)
-* [NodeJS](https://developer.precisely.com/apis/docs/index.html#NodeJS/node.js_sdk.html) 
-* [iOS](https://developer.precisely.com/apis/docs/index.html#iOS%20SDK/ios_intro.html)
-* [Java](https://developer.precisely.com/apis/docs/index.html#Java%20SDK/java_intro.html)
-* [C#](https://developer.precisely.com/apis/docs/index.html#C_sdk/java_intro.html)  
-* Python
+*	[Android](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/Android%20SDK/android_intro.html)
+*	[NodeJS](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/NodeJS/node.js_sdk.html) 
+*	[iOS](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/iOS%20SDK/ios_intro.html)
+*	[Java](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/Java%20SDK/java_intro.html)
+*	[C#](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/C_sdk/java_intro.html)
+*   Python  
 
-[Click here](https://developer.precisely.com/apis/docs/index.html) for detailed Documentation on Precisely APIs 
+
+[Click here](https://docs.precisely.com/docs/sftw/precisely-apis/main/en-us/webhelp/apis/About%20Document/about_this_doc.html) for detailed Documentation on Precisely APIs 
 # PreciselyAPIsPythonSDK
 Enhance & enrich your data, applications, business processes, and workflows with rich location, information, and identify APIs.
 
