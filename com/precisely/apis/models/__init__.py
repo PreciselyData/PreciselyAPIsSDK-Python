@@ -203,8 +203,6 @@ from com.precisely.apis.model.poi_boundary_preferences import POIBoundaryPrefere
 from com.precisely.apis.model.poi_boundary_response import POIBoundaryResponse
 from com.precisely.apis.model.poiby_geometry_request import POIByGeometryRequest
 from com.precisely.apis.model.psap_response import PSAPResponse
-from com.precisely.apis.model.parcel import Parcel
-from com.precisely.apis.model.parcel_boundary import ParcelBoundary
 from com.precisely.apis.model.parent_business import ParentBusiness
 from com.precisely.apis.model.pbkey import Pbkey
 from com.precisely.apis.model.phone_verification import PhoneVerification
@@ -226,8 +224,6 @@ from com.precisely.apis.model.property_info_address_request import PropertyInfoA
 from com.precisely.apis.model.property_info_preferences import PropertyInfoPreferences
 from com.precisely.apis.model.property_info_response import PropertyInfoResponse
 from com.precisely.apis.model.property_info_responses import PropertyInfoResponses
-from com.precisely.apis.model.property_information_geometry import PropertyInformationGeometry
-from com.precisely.apis.model.property_information_geometry_crc import PropertyInformationGeometryCRC
 from com.precisely.apis.model.proxy import Proxy
 from com.precisely.apis.model.race_and_ethnicity_theme import RaceAndEthnicityTheme
 from com.precisely.apis.model.range_variable import RangeVariable
