@@ -85,7 +85,7 @@ class CandidateRangeUnit(ModelNormal):
             'unit_type': (str,),  # noqa: E501
             'high_unit_value': (str,),  # noqa: E501
             'low_unit_value': (str,),  # noqa: E501
-            'custom_values': ({str: ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},)},),  # noqa: E501
+            'custom_values': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
         }
 
     @cached_property
