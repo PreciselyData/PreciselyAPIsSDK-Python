@@ -96,7 +96,7 @@ class GeocodeAddress(ModelNormal):
             'street_name': (str,),  # noqa: E501
             'unit_type': (str,),  # noqa: E501
             'unit_value': (str,),  # noqa: E501
-            'custom_fields': ({str: ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},)},),  # noqa: E501
+            'custom_fields': (dict,),  # noqa: E501
         }
 
     @cached_property
