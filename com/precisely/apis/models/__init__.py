@@ -23,6 +23,7 @@ from com.precisely.apis.model.addresses_count import AddressesCount
 from com.precisely.apis.model.addresses_dto import AddressesDTO
 from com.precisely.apis.model.addresses_preferences import AddressesPreferences
 from com.precisely.apis.model.addresses_response import AddressesResponse
+from com.precisely.apis.model.amenities import Amenities
 from com.precisely.apis.model.area import Area
 from com.precisely.apis.model.area_code_info import AreaCodeInfo
 from com.precisely.apis.model.assets_and_wealth_theme import AssetsAndWealthTheme
@@ -34,10 +35,15 @@ from com.precisely.apis.model.boundary import Boundary
 from com.precisely.apis.model.boundary_buffer import BoundaryBuffer
 from com.precisely.apis.model.boundary_point import BoundaryPoint
 from com.precisely.apis.model.buffer_relation import BufferRelation
+from com.precisely.apis.model.buildg_class import BuildgClass
 from com.precisely.apis.model.buildg_condition import BuildgCondition
 from com.precisely.apis.model.buildg_features_sqft import BuildgFeaturesSqft
+from com.precisely.apis.model.buildg_improv_area import BuildgImprovArea
+from com.precisely.apis.model.buildg_improve_type import BuildgImproveType
+from com.precisely.apis.model.buildg_quality import BuildgQuality
 from com.precisely.apis.model.buildg_style import BuildgStyle
 from com.precisely.apis.model.buildg_type import BuildgType
+from com.precisely.apis.model.buildg_view import BuildgView
 from com.precisely.apis.model.building_sqft_source import BuildingSqftSource
 from com.precisely.apis.model.business_id import BusinessId
 from com.precisely.apis.model.ca_exemptions import CaExemptions
@@ -97,11 +103,13 @@ from com.precisely.apis.model.earthquake_risk_response_list import EarthquakeRis
 from com.precisely.apis.model.education_theme import EducationTheme
 from com.precisely.apis.model.employee_count import EmployeeCount
 from com.precisely.apis.model.employment_theme import EmploymentTheme
+from com.precisely.apis.model.energy_type import EnergyType
 from com.precisely.apis.model.error_code import ErrorCode
 from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.events_count import EventsCount
 from com.precisely.apis.model.expenditure_theme import ExpenditureTheme
 from com.precisely.apis.model.exterior_walls import ExteriorWalls
+from com.precisely.apis.model.extra_feature_sqft import ExtraFeatureSqft
 from com.precisely.apis.model.field import Field
 from com.precisely.apis.model.fields_matching import FieldsMatching
 from com.precisely.apis.model.fire_department import FireDepartment
@@ -116,6 +124,7 @@ from com.precisely.apis.model.fire_shed import FireShed
 from com.precisely.apis.model.fire_station import FireStation
 from com.precisely.apis.model.fire_station_contact_details import FireStationContactDetails
 from com.precisely.apis.model.fire_stations import FireStations
+from com.precisely.apis.model.fireplace_type import FireplaceType
 from com.precisely.apis.model.flood_hazard_preferences import FloodHazardPreferences
 from com.precisely.apis.model.flood_risk_by_address_request import FloodRiskByAddressRequest
 from com.precisely.apis.model.flood_risk_by_location_request import FloodRiskByLocationRequest
@@ -123,8 +132,11 @@ from com.precisely.apis.model.flood_risk_preferences import FloodRiskPreferences
 from com.precisely.apis.model.flood_risk_response import FloodRiskResponse
 from com.precisely.apis.model.flood_risk_response_list import FloodRiskResponseList
 from com.precisely.apis.model.flood_zone import FloodZone
+from com.precisely.apis.model.floor_type import FloorType
+from com.precisely.apis.model.formatted_tax_address import FormattedTaxAddress
 from com.precisely.apis.model.foundation import Foundation
 from com.precisely.apis.model.free_or_reduced_price_lunches import FreeOrReducedPriceLunches
+from com.precisely.apis.model.fuel_type import FuelType
 from com.precisely.apis.model.garage_type import GarageType
 from com.precisely.apis.model.geo_location_access_point import GeoLocationAccessPoint
 from com.precisely.apis.model.geo_location_country import GeoLocationCountry
@@ -168,6 +180,7 @@ from com.precisely.apis.model.ipd_tax_jurisdiction import IPDTaxJurisdiction
 from com.precisely.apis.model.income_theme import IncomeTheme
 from com.precisely.apis.model.index_variable import IndexVariable
 from com.precisely.apis.model.individual_value_variable import IndividualValueVariable
+from com.precisely.apis.model.interior_wall import InteriorWall
 from com.precisely.apis.model.intermediate_points import IntermediatePoints
 from com.precisely.apis.model.intersection import Intersection
 from com.precisely.apis.model.intersection_response import IntersectionResponse
@@ -178,6 +191,7 @@ from com.precisely.apis.model.keys import Keys
 from com.precisely.apis.model.land_use import LandUse
 from com.precisely.apis.model.lat_long_fields import LatLongFields
 from com.precisely.apis.model.life_style_theme import LifeStyleTheme
+from com.precisely.apis.model.loc_code import LocCode
 from com.precisely.apis.model.local_tax_geometry import LocalTaxGeometry
 from com.precisely.apis.model.local_tax_preferences import LocalTaxPreferences
 from com.precisely.apis.model.location import Location
@@ -192,6 +206,8 @@ from com.precisely.apis.model.name import Name
 from com.precisely.apis.model.neighborhoods_response import NeighborhoodsResponse
 from com.precisely.apis.model.network import Network
 from com.precisely.apis.model.organization_type import OrganizationType
+from com.precisely.apis.model.other_rooms import OtherRooms
+from com.precisely.apis.model.owner_vest_type import OwnerVestType
 from com.precisely.apis.model.owners import Owners
 from com.precisely.apis.model.pb_key_address_request import PBKeyAddressRequest
 from com.precisely.apis.model.pb_key_response import PBKeyResponse
@@ -214,9 +230,12 @@ from com.precisely.apis.model.poi_classification import PoiClassification
 from com.precisely.apis.model.poi_count import PoiCount
 from com.precisely.apis.model.poi_count_request import PoiCountRequest
 from com.precisely.apis.model.points import Points
+from com.precisely.apis.model.pool_type import PoolType
 from com.precisely.apis.model.population_theme import PopulationTheme
 from com.precisely.apis.model.preferenc_time_zone import PreferencTimeZone
 from com.precisely.apis.model.primary_zone import PrimaryZone
+from com.precisely.apis.model.prior_sale_code import PriorSaleCode
+from com.precisely.apis.model.prop_site_influene import PropSiteInfluene
 from com.precisely.apis.model.properties import Properties
 from com.precisely.apis.model.property_attributes import PropertyAttributes
 from com.precisely.apis.model.property_geometry import PropertyGeometry
@@ -259,6 +278,7 @@ from com.precisely.apis.model.shore_line_distance import ShoreLineDistance
 from com.precisely.apis.model.sic import Sic
 from com.precisely.apis.model.sic_metadata import SicMetadata
 from com.precisely.apis.model.site_details import SiteDetails
+from com.precisely.apis.model.situs_address import SitusAddress
 from com.precisely.apis.model.special_purpose_district import SpecialPurposeDistrict
 from com.precisely.apis.model.special_purpose_district_tax import SpecialPurposeDistrictTax
 from com.precisely.apis.model.speed_limit import SpeedLimit
@@ -273,6 +293,7 @@ from com.precisely.apis.model.tax_address_request import TaxAddressRequest
 from com.precisely.apis.model.tax_county import TaxCounty
 from com.precisely.apis.model.tax_district_response import TaxDistrictResponse
 from com.precisely.apis.model.tax_district_response_list import TaxDistrictResponseList
+from com.precisely.apis.model.tax_doc_type import TaxDocType
 from com.precisely.apis.model.tax_exemption import TaxExemption
 from com.precisely.apis.model.tax_geometry import TaxGeometry
 from com.precisely.apis.model.tax_jurisdiction import TaxJurisdiction
@@ -285,6 +306,7 @@ from com.precisely.apis.model.tax_rate_location_request import TaxRateLocationRe
 from com.precisely.apis.model.tax_rate_matched_address import TaxRateMatchedAddress
 from com.precisely.apis.model.tax_rate_response import TaxRateResponse
 from com.precisely.apis.model.tax_responses import TaxResponses
+from com.precisely.apis.model.tax_sales_price_code import TaxSalesPriceCode
 from com.precisely.apis.model.tax_state import TaxState
 from com.precisely.apis.model.time import Time
 from com.precisely.apis.model.timezone_address_request import TimezoneAddressRequest
