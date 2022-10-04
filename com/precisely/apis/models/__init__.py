@@ -38,7 +38,7 @@ from com.precisely.apis.model.buffer_relation import BufferRelation
 from com.precisely.apis.model.buildg_class import BuildgClass
 from com.precisely.apis.model.buildg_condition import BuildgCondition
 from com.precisely.apis.model.buildg_features_sqft import BuildgFeaturesSqft
-from com.precisely.apis.model.buildg_improv_area import BuildgImprovArea
+from com.precisely.apis.model.buildg_improve_area import BuildgImproveArea
 from com.precisely.apis.model.buildg_improve_type import BuildgImproveType
 from com.precisely.apis.model.buildg_quality import BuildgQuality
 from com.precisely.apis.model.buildg_style import BuildgStyle

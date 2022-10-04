@@ -49,7 +49,6 @@ Name | Type | Description | Notes
 **buildg_count** | **str** |  | [optional] 
 **buildg_unit_no** | **str** |  | [optional] 
 **buildg_features_sq_ft** | [**[BuildgFeaturesSqft]**](BuildgFeaturesSqft.md) |  | [optional] 
-**business_name** | **str** |  | [optional] 
 **tax_address** | **str** |  | [optional] 
 **formatted_tax_address** | [**FormattedTaxAddress**](FormattedTaxAddress.md) |  | [optional] 
 **situs_address** | [**SitusAddress**](SitusAddress.md) |  | [optional] 
@@ -75,7 +74,6 @@ Name | Type | Description | Notes
 **elevator** | **str** |  | [optional] 
 **prop_apn_sequence** | **str** |  | [optional] 
 **fips_code** | **str** |  | [optional] 
-**prop_census_tract** | **str** |  | [optional] 
 **prop_zoning** | **str** |  | [optional] 
 **loc_code** | [**LocCode**](LocCode.md) |  | [optional] 
 **legal_map_ref** | **str** |  | [optional] 
@@ -116,7 +114,7 @@ Name | Type | Description | Notes
 **water_type** | **str** |  | [optional] 
 **amenities** | [**Amenities**](Amenities.md) |  | [optional] 
 **extra_feature_sqft** | [**[ExtraFeatureSqft]**](ExtraFeatureSqft.md) |  | [optional] 
-**buildg_improv_area** | [**[BuildgImprovArea]**](BuildgImprovArea.md) |  | [optional] 
+**buildg_improve_area** | [**[BuildgImproveArea]**](BuildgImproveArea.md) |  | [optional] 
 **tax_account_number** | **str** |  | [optional] 
 **tax_tape_cut_date** | **str** |  | [optional] 
 **tax_doc_type** | [**TaxDocType**](TaxDocType.md) |  | [optional] 
@@ -133,6 +131,8 @@ Name | Type | Description | Notes
 **market_value_land** | **str** |  | [optional] 
 **appraised_value_land** | **str** |  | [optional] 
 **tax_rate_code** | **str** |  | [optional] 
+**prop_link_id** | **str** |  | [optional] 
+**geo_id** | **str** |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
