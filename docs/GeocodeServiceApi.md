@@ -65,6 +65,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     corner_offset = "7" # str | Specifies the distance to offset the street end points in street-level matching. (optional) if omitted the server will use the default value of "7"
     corner_offset_units = "METERS" # str | Specifies the unit of measurement for the corner offset. (optional) if omitted the server will use the default value of "METERS"
     remove_accent_marks = "false" # str | Specifies whether to Suppress accents and other diacritical marks. (optional) if omitted the server will use the default value of "false"
+    find_dpv = "false" # str | Specifies if Delivery Point Validation is required. Note: This parameter is only applicable for USA addresses. (optional) if omitted the server will use the default value of "false"
 
     # example passing only required values which don't have defaults set
     try:
@@ -78,7 +79,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # Get Forward Geocode(Basic/Premium/Advanced)
-        api_response = api_instance.geocode(datapack_bundle, country=country, main_address=main_address, match_mode=match_mode, fallback_geo=fallback_geo, fallback_postal=fallback_postal, max_cands=max_cands, street_offset=street_offset, street_offset_units=street_offset_units, corner_offset=corner_offset, corner_offset_units=corner_offset_units, remove_accent_marks=remove_accent_marks)
+        api_response = api_instance.geocode(datapack_bundle, country=country, main_address=main_address, match_mode=match_mode, fallback_geo=fallback_geo, fallback_postal=fallback_postal, max_cands=max_cands, street_offset=street_offset, street_offset_units=street_offset_units, corner_offset=corner_offset, corner_offset_units=corner_offset_units, remove_accent_marks=remove_accent_marks, find_dpv=find_dpv)
         pprint(api_response)
     except com.precisely.apis.ApiException as e:
         print("Exception when calling GeocodeServiceApi->geocode: %s\n" % e)
@@ -101,6 +102,7 @@ Name | Type | Description  | Notes
  **corner_offset** | **str**| Specifies the distance to offset the street end points in street-level matching. | [optional] if omitted the server will use the default value of "7"
  **corner_offset_units** | **str**| Specifies the unit of measurement for the corner offset. | [optional] if omitted the server will use the default value of "METERS"
  **remove_accent_marks** | **str**| Specifies whether to Suppress accents and other diacritical marks. | [optional] if omitted the server will use the default value of "false"
+ **find_dpv** | **str**| Specifies if Delivery Point Validation is required. Note: This parameter is only applicable for USA addresses. | [optional] if omitted the server will use the default value of "false"
 
 ### Return type
 

@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "com.precisely.apis"
-VERSION = "12.0.1"
+VERSION = "14.0.0"
 # To install the library, run the following
 #
 # python setup.py install
