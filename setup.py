@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "com.precisely.apis"
-VERSION = "14.0.0"
+VERSION = "14.0.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -29,7 +29,7 @@ setup(
     version=VERSION,
     description="Precisely APIs",
     author="Precisely APIs Support",
-    author_email="preciselyapis@gmail.com",
+    author_email="PreciselyAPIs-Support@precisely.com",
     url="https://developer.precisely.com/",
     keywords=["Precisely APIs"],
     python_requires=">=3.6",
