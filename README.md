@@ -146,7 +146,6 @@ def addressAutocompleteExample():
 
 if __name__ == "__main__":
     addressAutocompleteExample()
-
 ```
 
 ## Documentation for API Endpoints
