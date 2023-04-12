@@ -106,7 +106,7 @@ class CandidateRange(ModelNormal):
             'side': (str,),  # noqa: E501
             'odd_even_indicator': (str,),  # noqa: E501
             'units': ([CandidateRangeUnit],),  # noqa: E501
-            'custom_values': ({str: ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},)},),  # noqa: E501
+            'custom_values': (dict,),  # noqa: E501
         }
 
     @cached_property
