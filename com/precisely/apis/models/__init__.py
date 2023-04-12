@@ -82,7 +82,6 @@ from com.precisely.apis.model.demographics_geometry import DemographicsGeometry
 from com.precisely.apis.model.demographics_geometry_crc import DemographicsGeometryCRC
 from com.precisely.apis.model.demographics_themes_v2 import DemographicsThemesV2
 from com.precisely.apis.model.depth import Depth
-from com.precisely.apis.model.device_status_network import DeviceStatusNetwork
 from com.precisely.apis.model.direction_geometry import DirectionGeometry
 from com.precisely.apis.model.distance import Distance
 from com.precisely.apis.model.distance_to_border import DistanceToBorder
@@ -140,7 +139,6 @@ from com.precisely.apis.model.fuel_type import FuelType
 from com.precisely.apis.model.garage_type import GarageType
 from com.precisely.apis.model.geo_location_access_point import GeoLocationAccessPoint
 from com.precisely.apis.model.geo_location_country import GeoLocationCountry
-from com.precisely.apis.model.geo_location_fixed_line_country import GeoLocationFixedLineCountry
 from com.precisely.apis.model.geo_location_ip_addr import GeoLocationIpAddr
 from com.precisely.apis.model.geo_location_place import GeoLocationPlace
 from com.precisely.apis.model.geo_location_state import GeoLocationState
@@ -222,6 +220,7 @@ from com.precisely.apis.model.psap_response import PSAPResponse
 from com.precisely.apis.model.parent_business import ParentBusiness
 from com.precisely.apis.model.pbkey import Pbkey
 from com.precisely.apis.model.phone_verification import PhoneVerification
+from com.precisely.apis.model.phone_verification_output import PhoneVerificationOutput
 from com.precisely.apis.model.place import Place
 from com.precisely.apis.model.places_response import PlacesResponse
 from com.precisely.apis.model.poi import Poi
@@ -354,6 +353,9 @@ from com.precisely.apis.model.validate_mailing_address_uscanapi_options import V
 from com.precisely.apis.model.validate_mailing_address_uscanapi_output import ValidateMailingAddressUSCANAPIOutput
 from com.precisely.apis.model.validate_mailing_address_uscanapi_request import ValidateMailingAddressUSCANAPIRequest
 from com.precisely.apis.model.validate_mailing_address_uscanapi_response import ValidateMailingAddressUSCANAPIResponse
+from com.precisely.apis.model.validate_phone_number_api_request import ValidatePhoneNumberAPIRequest
+from com.precisely.apis.model.validate_phone_number_api_request_input import ValidatePhoneNumberAPIRequestInput
+from com.precisely.apis.model.validate_phone_number_api_request_input_row import ValidatePhoneNumberAPIRequestInputRow
 from com.precisely.apis.model.water_body import WaterBody
 from com.precisely.apis.model.water_body_response import WaterBodyResponse
 from com.precisely.apis.model.zones_address import ZonesAddress
