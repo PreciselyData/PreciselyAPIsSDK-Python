@@ -12,7 +12,7 @@
 
 * [Address Autocomplete](https://developer.precisely.com/apis/typeahead): Address Autocomplete. Build Address Autocomplete into your websites. The Address Autocomplete API returns an autocompleted list of addresses based on the input of a partial address. Useful for any local search, checkout, shipping, or billing experiences on your website. Increase e-commerce conversion by 3-6%!
 
-* [Address Autocomplete Enterprise](https://developer.precisely.com/apis/autocomplete) :Build Address Autocomplete Enterprise into your websites. The Address Autocomplete Enterprise API returns an autocompleted list of addresses based on the input of a partial address. It is useful for any local search, checkout, shipping, or billing experiences on your website.
+* [Address Autocomplete Enterprise](https://developer.precisely.com/apis/autocomplete): Build Address Autocomplete Enterprise into your websites. The Address Autocomplete Enterprise API returns an autocompleted list of addresses based on the input of a partial address. It is useful for any local search, checkout, shipping, or billing experiences on your website.
 
 * [Maps](https://developer.precisely.com/apis/maps): Beautiful Visualization. Add your data and/or Precisely data atop beautiful maps for visualizations. Choose from three map styles - Bronze, Iron, and Steel.
 
