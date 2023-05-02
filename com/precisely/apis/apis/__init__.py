@@ -6,7 +6,7 @@
 # raise a `RecursionError`.
 # In order to avoid this, import only the API that you directly need like:
 #
-#   from .api.address_autocomplete_service_api import AddressAutocompleteServiceApi
+#   from .api.address_autocomplete_enterprise_service_api import AddressAutocompleteEnterpriseServiceApi
 #
 # or import this package, but before doing it, use:
 #
@@ -14,6 +14,7 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
+from com.precisely.apis.api.address_autocomplete_enterprise_service_api import AddressAutocompleteEnterpriseServiceApi
 from com.precisely.apis.api.address_autocomplete_service_api import AddressAutocompleteServiceApi
 from com.precisely.apis.api.address_verification_service_api import AddressVerificationServiceApi
 from com.precisely.apis.api.addresses_service__api import AddressesServiceApi
