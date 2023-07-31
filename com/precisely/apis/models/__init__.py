@@ -16,6 +16,7 @@ from com.precisely.apis.model.ah_jmailing_address import AHJmailingAddress
 from com.precisely.apis.model.absentee_owner import AbsenteeOwner
 from com.precisely.apis.model.accuracy import Accuracy
 from com.precisely.apis.model.address import Address
+from com.precisely.apis.model.address1 import Address1
 from com.precisely.apis.model.address_time import AddressTime
 from com.precisely.apis.model.address_type import AddressType
 from com.precisely.apis.model.addresses_by_boundary_request import AddressesByBoundaryRequest
