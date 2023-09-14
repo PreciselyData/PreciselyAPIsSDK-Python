@@ -63,6 +63,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     include_ranges_details = "includeRangesDetails_example" # str | if value set 'Y' then display all unit info of ranges, if value set 'N' then don't show ranges (optional)
     search_type = "searchType_example" # str | Preference to control search type of interactive requests. (optional)
     search_on_address_number = "searchOnAddressNumber_example" # str | Preference to search on address number. (optional)
+    search_on_unit_info = "searchOnUnitInfo_example" # str | Preference to search on unit info. (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -76,7 +77,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # Address Autocomplete Search
-        api_response = api_instance.search_v2(search_text, latitude=latitude, longitude=longitude, search_radius=search_radius, search_radius_unit=search_radius_unit, max_candidates=max_candidates, country=country, match_on_address_number=match_on_address_number, auto_detect_location=auto_detect_location, ip_address=ip_address, area_name1=area_name1, area_name3=area_name3, post_code=post_code, return_admin_areas_only=return_admin_areas_only, include_ranges_details=include_ranges_details, search_type=search_type, search_on_address_number=search_on_address_number)
+        api_response = api_instance.search_v2(search_text, latitude=latitude, longitude=longitude, search_radius=search_radius, search_radius_unit=search_radius_unit, max_candidates=max_candidates, country=country, match_on_address_number=match_on_address_number, auto_detect_location=auto_detect_location, ip_address=ip_address, area_name1=area_name1, area_name3=area_name3, post_code=post_code, return_admin_areas_only=return_admin_areas_only, include_ranges_details=include_ranges_details, search_type=search_type, search_on_address_number=search_on_address_number, search_on_unit_info=search_on_unit_info)
         pprint(api_response)
     except com.precisely.apis.ApiException as e:
         print("Exception when calling AddressAutocompleteServiceApi->search_v2: %s\n" % e)
@@ -104,6 +105,7 @@ Name | Type | Description  | Notes
  **include_ranges_details** | **str**| if value set &#39;Y&#39; then display all unit info of ranges, if value set &#39;N&#39; then don&#39;t show ranges | [optional]
  **search_type** | **str**| Preference to control search type of interactive requests. | [optional]
  **search_on_address_number** | **str**| Preference to search on address number. | [optional]
+ **search_on_unit_info** | **str**| Preference to search on unit info. | [optional]
 
 ### Return type
 
