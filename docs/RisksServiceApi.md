@@ -18,10 +18,15 @@ Method | HTTP request | Description
 [**get_earthquake_risk_by_location**](RisksServiceApi.md#get_earthquake_risk_by_location) | **GET** /risks/v1/earthquake/bylocation | Get Earthquake Risk By Location
 [**get_earthquake_risk_by_location_batch**](RisksServiceApi.md#get_earthquake_risk_by_location_batch) | **POST** /risks/v1/earthquake/bylocation | Post Earthquake Risk By Location
 [**get_fire_history**](RisksServiceApi.md#get_fire_history) | **GET** /risks/v1/firehistory | Get Fire History
+[**get_fire_history_v2**](RisksServiceApi.md#get_fire_history_v2) | **GET** /risks/v2/firehistory | Get Fire History
 [**get_fire_risk_by_address**](RisksServiceApi.md#get_fire_risk_by_address) | **GET** /risks/v1/fire/byaddress | Get Fire Risk By Address
 [**get_fire_risk_by_address_batch**](RisksServiceApi.md#get_fire_risk_by_address_batch) | **POST** /risks/v1/fire/byaddress | Post Fire Risk By Address
 [**get_fire_risk_by_location**](RisksServiceApi.md#get_fire_risk_by_location) | **GET** /risks/v1/fire/bylocation | Get Fire Risk By Location
 [**get_fire_risk_by_location_batch**](RisksServiceApi.md#get_fire_risk_by_location_batch) | **POST** /risks/v1/fire/bylocation | Post Fire Risk By Location
+[**get_fire_risk_v2_by_address**](RisksServiceApi.md#get_fire_risk_v2_by_address) | **GET** /risks/v2/fire/byaddress | Get Fire Risk By Address
+[**get_fire_risk_v2_by_address_batch**](RisksServiceApi.md#get_fire_risk_v2_by_address_batch) | **POST** /risks/v2/fire/byaddress | Post Fire Risk By Address
+[**get_fire_risk_v2_by_location**](RisksServiceApi.md#get_fire_risk_v2_by_location) | **GET** /risks/v2/fire/bylocation | Get Fire Risk By Location
+[**get_fire_risk_v2_by_location_batch**](RisksServiceApi.md#get_fire_risk_v2_by_location_batch) | **POST** /risks/v2/fire/bylocation | Post Fire Risk By Location
 [**get_fire_station_by_address**](RisksServiceApi.md#get_fire_station_by_address) | **GET** /risks/v1/firestation/byaddress | Get Fire Station By Address
 [**get_fire_station_by_location**](RisksServiceApi.md#get_fire_station_by_location) | **GET** /risks/v1/firestation/bylocation | Get Fire Station By Location
 [**get_flood_risk_by_address**](RisksServiceApi.md#get_flood_risk_by_address) | **GET** /risks/v1/flood/byaddress | Get Flood Risk By Address
@@ -1454,6 +1459,102 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **get_fire_history_v2**
+> FireHistoryV2 get_fire_history_v2(post_code)
+
+Get Fire History
+
+Accepts postcode as input and Returns fire event details for a particular postcode.
+
+### Example
+
+* OAuth Authentication (oAuth2Password):
+
+```python
+import time
+import com.precisely.apis
+from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.fire_history_v2 import FireHistoryV2
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.precisely.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure OAuth2 access token for authorization: oAuth2Password
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Enter a context with an instance of the API client
+with com.precisely.apis.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = risks_service_api.RisksServiceApi(api_client)
+    post_code = "postCode_example" # str | 5 digit Postal code to search
+    start_date = "startDate_example" # str | Start time in milliseconds(UTC) (optional)
+    end_date = "endDate_example" # str | End time in milliseconds(UTC) (optional)
+    max_candidates = "maxCandidates_example" # str | Maximum response events (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Get Fire History
+        api_response = api_instance.get_fire_history_v2(post_code)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_history_v2: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Get Fire History
+        api_response = api_instance.get_fire_history_v2(post_code, start_date=start_date, end_date=end_date, max_candidates=max_candidates)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_history_v2: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **post_code** | **str**| 5 digit Postal code to search |
+ **start_date** | **str**| Start time in milliseconds(UTC) | [optional]
+ **end_date** | **str**| End time in milliseconds(UTC) | [optional]
+ **max_candidates** | **str**| Maximum response events | [optional]
+
+### Return type
+
+[**FireHistoryV2**](FireHistoryV2.md)
+
+### Authorization
+
+[oAuth2Password](../README.md#oAuth2Password)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **get_fire_risk_by_address**
 > FireRiskResponse get_fire_risk_by_address(address)
 
@@ -1850,6 +1951,414 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json, application/xml
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_fire_risk_v2_by_address**
+> FireRiskV2Response get_fire_risk_v2_by_address(address)
+
+Get Fire Risk By Address
+
+Accepts addresses as input and Returns fire risk data by risk types.
+
+### Example
+
+* OAuth Authentication (oAuth2Password):
+
+```python
+import time
+import com.precisely.apis
+from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.fire_risk_v2_response import FireRiskV2Response
+from com.precisely.apis.model.error_info import ErrorInfo
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.precisely.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure OAuth2 access token for authorization: oAuth2Password
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Enter a context with an instance of the API client
+with com.precisely.apis.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = risks_service_api.RisksServiceApi(api_client)
+    address = "address_example" # str | Free form address text
+    include_geometry = "includeGeometry_example" # str | Flag to return Geometry default is N (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Get Fire Risk By Address
+        api_response = api_instance.get_fire_risk_v2_by_address(address)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_address: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Get Fire Risk By Address
+        api_response = api_instance.get_fire_risk_v2_by_address(address, include_geometry=include_geometry)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_address: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **str**| Free form address text |
+ **include_geometry** | **str**| Flag to return Geometry default is N | [optional]
+
+### Return type
+
+[**FireRiskV2Response**](FireRiskV2Response.md)
+
+### Authorization
+
+[oAuth2Password](../README.md#oAuth2Password)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_fire_risk_v2_by_address_batch**
+> FireRiskV2ResponseList get_fire_risk_v2_by_address_batch(fire_risk_by_address_request)
+
+Post Fire Risk By Address
+
+This is a Batch offering for 'Fire Risk By Address' service. It accepts a single address or a list of addresses and retrieve fire risk data by risk types.
+
+### Example
+
+* OAuth Authentication (oAuth2Password):
+
+```python
+import time
+import com.precisely.apis
+from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.fire_risk_v2_response_list import FireRiskV2ResponseList
+from com.precisely.apis.model.fire_risk_by_address_request import FireRiskByAddressRequest
+from com.precisely.apis.model.error_info import ErrorInfo
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.precisely.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure OAuth2 access token for authorization: oAuth2Password
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Enter a context with an instance of the API client
+with com.precisely.apis.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = risks_service_api.RisksServiceApi(api_client)
+    fire_risk_by_address_request = FireRiskByAddressRequest(
+        addresses=[
+            RiskAddress(
+                object_id="object_id_example",
+                display_name="display_name_example",
+                street_side="street_side_example",
+                business_name="business_name_example",
+                address_line1="address_line1_example",
+                address_line2="address_line2_example",
+                address_line3="address_line3_example",
+                city="city_example",
+                state_province="state_province_example",
+                county="county_example",
+                postal_code="postal_code_example",
+                latitude="latitude_example",
+                longitude="longitude_example",
+                status="status_example",
+                urbanization_name="urbanization_name_example",
+                formatted_address="formatted_address_example",
+                main_address_line="main_address_line_example",
+                address_last_line="address_last_line_example",
+                place_name="place_name_example",
+                area_name1="area_name1_example",
+                area_name2="area_name2_example",
+                area_name3="area_name3_example",
+                area_name4="area_name4_example",
+                post_code="post_code_example",
+                post_code_ext="post_code_ext_example",
+                country="country_example",
+                address_number="address_number_example",
+                street_name="street_name_example",
+                unit_type="unit_type_example",
+                unit_value="unit_value_example",
+            ),
+        ],
+        preferences=RiskPreferences(
+            include_geometry="include_geometry_example",
+            include_zone_desc="include_zone_desc_example",
+            richter_value="richter_value_example",
+        ),
+    ) # FireRiskByAddressRequest | 
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Post Fire Risk By Address
+        api_response = api_instance.get_fire_risk_v2_by_address_batch(fire_risk_by_address_request)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_address_batch: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fire_risk_by_address_request** | [**FireRiskByAddressRequest**](FireRiskByAddressRequest.md)|  |
+
+### Return type
+
+[**FireRiskV2ResponseList**](FireRiskV2ResponseList.md)
+
+### Authorization
+
+[oAuth2Password](../README.md#oAuth2Password)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_fire_risk_v2_by_location**
+> FireRiskV2Response get_fire_risk_v2_by_location(longitude, latitude)
+
+Get Fire Risk By Location
+
+Accepts latitude & longitude as input and Returns fire risk data by risk types.
+
+### Example
+
+* OAuth Authentication (oAuth2Password):
+
+```python
+import time
+import com.precisely.apis
+from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.fire_risk_v2_response import FireRiskV2Response
+from com.precisely.apis.model.error_info import ErrorInfo
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.precisely.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure OAuth2 access token for authorization: oAuth2Password
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Enter a context with an instance of the API client
+with com.precisely.apis.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = risks_service_api.RisksServiceApi(api_client)
+    longitude = "longitude_example" # str | Longitude of Location
+    latitude = "latitude_example" # str | Latitude of Location
+    include_geometry = "includeGeometry_example" # str | Flag to return Geometry default is N (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Get Fire Risk By Location
+        api_response = api_instance.get_fire_risk_v2_by_location(longitude, latitude)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_location: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        # Get Fire Risk By Location
+        api_response = api_instance.get_fire_risk_v2_by_location(longitude, latitude, include_geometry=include_geometry)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_location: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **longitude** | **str**| Longitude of Location |
+ **latitude** | **str**| Latitude of Location |
+ **include_geometry** | **str**| Flag to return Geometry default is N | [optional]
+
+### Return type
+
+[**FireRiskV2Response**](FireRiskV2Response.md)
+
+### Authorization
+
+[oAuth2Password](../README.md#oAuth2Password)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+**500** | Internal Server Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_fire_risk_v2_by_location_batch**
+> FireRiskV2ResponseList get_fire_risk_v2_by_location_batch(fire_risk_by_location_request)
+
+Post Fire Risk By Location
+
+This is a Batch offering for 'Fire Risk By Location' service. It accepts a single location coordinate or a list of location coordinates and retrieve fire risk data by risk types.
+
+### Example
+
+* OAuth Authentication (oAuth2Password):
+
+```python
+import time
+import com.precisely.apis
+from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.fire_risk_v2_response_list import FireRiskV2ResponseList
+from com.precisely.apis.model.fire_risk_by_location_request import FireRiskByLocationRequest
+from com.precisely.apis.model.error_info import ErrorInfo
+from pprint import pprint
+# Defining the host is optional and defaults to https://api.precisely.com
+# See configuration.py for a list of all supported configuration parameters.
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure OAuth2 access token for authorization: oAuth2Password
+configuration = com.precisely.apis.Configuration(
+    host = "https://api.precisely.com"
+)
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# Enter a context with an instance of the API client
+with com.precisely.apis.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = risks_service_api.RisksServiceApi(api_client)
+    fire_risk_by_location_request = FireRiskByLocationRequest(
+        locations=[
+            RiskLocations(
+                geometry=RiskGeometry(
+                    type="type_example",
+                    coordinates=[
+                        3.14,
+                    ],
+                ),
+                purchase_amount="purchase_amount_example",
+                object_id="object_id_example",
+            ),
+        ],
+        preferences=RiskPreferences(
+            include_geometry="include_geometry_example",
+            include_zone_desc="include_zone_desc_example",
+            richter_value="richter_value_example",
+        ),
+    ) # FireRiskByLocationRequest | 
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Post Fire Risk By Location
+        api_response = api_instance.get_fire_risk_v2_by_location_batch(fire_risk_by_location_request)
+        pprint(api_response)
+    except com.precisely.apis.ApiException as e:
+        print("Exception when calling RisksServiceApi->get_fire_risk_v2_by_location_batch: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fire_risk_by_location_request** | [**FireRiskByLocationRequest**](FireRiskByLocationRequest.md)|  |
+
+### Return type
+
+[**FireRiskV2ResponseList**](FireRiskV2ResponseList.md)
+
+### Authorization
+
+[oAuth2Password](../README.md#oAuth2Password)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details

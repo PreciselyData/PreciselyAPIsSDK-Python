@@ -27,6 +27,7 @@ from com.precisely.apis.model.addresses_response import AddressesResponse
 from com.precisely.apis.model.amenities import Amenities
 from com.precisely.apis.model.area import Area
 from com.precisely.apis.model.area_code_info import AreaCodeInfo
+from com.precisely.apis.model.area_v2 import AreaV2
 from com.precisely.apis.model.assets_and_wealth_theme import AssetsAndWealthTheme
 from com.precisely.apis.model.base_flood_elevation import BaseFloodElevation
 from com.precisely.apis.model.basement_type import BasementType
@@ -60,6 +61,7 @@ from com.precisely.apis.model.center import Center
 from com.precisely.apis.model.city import City
 from com.precisely.apis.model.common_geometry import CommonGeometry
 from com.precisely.apis.model.community import Community
+from com.precisely.apis.model.community_group import CommunityGroup
 from com.precisely.apis.model.consistency_code import ConsistencyCode
 from com.precisely.apis.model.construction import Construction
 from com.precisely.apis.model.contact_details import ContactDetails
@@ -76,6 +78,7 @@ from com.precisely.apis.model.crime_risk_preferences import CrimeRiskPreferences
 from com.precisely.apis.model.crime_risk_response import CrimeRiskResponse
 from com.precisely.apis.model.crime_risk_response_list import CrimeRiskResponseList
 from com.precisely.apis.model.crs import Crs
+from com.precisely.apis.model.damage_group import DamageGroup
 from com.precisely.apis.model.demographics import Demographics
 from com.precisely.apis.model.demographics_advanced_preferences import DemographicsAdvancedPreferences
 from com.precisely.apis.model.demographics_advanced_request import DemographicsAdvancedRequest
@@ -114,12 +117,17 @@ from com.precisely.apis.model.field import Field
 from com.precisely.apis.model.fields_matching import FieldsMatching
 from com.precisely.apis.model.fire_department import FireDepartment
 from com.precisely.apis.model.fire_event import FireEvent
+from com.precisely.apis.model.fire_event_v2 import FireEventV2
 from com.precisely.apis.model.fire_events_response import FireEventsResponse
+from com.precisely.apis.model.fire_events_v2_response import FireEventsV2Response
 from com.precisely.apis.model.fire_history import FireHistory
+from com.precisely.apis.model.fire_history_v2 import FireHistoryV2
 from com.precisely.apis.model.fire_risk_by_address_request import FireRiskByAddressRequest
 from com.precisely.apis.model.fire_risk_by_location_request import FireRiskByLocationRequest
 from com.precisely.apis.model.fire_risk_response import FireRiskResponse
 from com.precisely.apis.model.fire_risk_response_list import FireRiskResponseList
+from com.precisely.apis.model.fire_risk_v2_response import FireRiskV2Response
+from com.precisely.apis.model.fire_risk_v2_response_list import FireRiskV2ResponseList
 from com.precisely.apis.model.fire_shed import FireShed
 from com.precisely.apis.model.fire_station import FireStation
 from com.precisely.apis.model.fire_station_contact_details import FireStationContactDetails
@@ -136,6 +144,7 @@ from com.precisely.apis.model.floor_type import FloorType
 from com.precisely.apis.model.formatted_tax_address import FormattedTaxAddress
 from com.precisely.apis.model.foundation import Foundation
 from com.precisely.apis.model.free_or_reduced_price_lunches import FreeOrReducedPriceLunches
+from com.precisely.apis.model.frequency_group import FrequencyGroup
 from com.precisely.apis.model.fuel_type import FuelType
 from com.precisely.apis.model.garage_type import GarageType
 from com.precisely.apis.model.geo_location_access_point import GeoLocationAccessPoint
@@ -201,6 +210,7 @@ from com.precisely.apis.model.matched_address import MatchedAddress
 from com.precisely.apis.model.matrix import Matrix
 from com.precisely.apis.model.mcd import Mcd
 from com.precisely.apis.model.metadata_response import MetadataResponse
+from com.precisely.apis.model.mitigation_group import MitigationGroup
 from com.precisely.apis.model.name import Name
 from com.precisely.apis.model.neighborhoods_response import NeighborhoodsResponse
 from com.precisely.apis.model.network import Network
@@ -278,6 +288,7 @@ from com.precisely.apis.model.school_ranking import SchoolRanking
 from com.precisely.apis.model.schools_near_by_response import SchoolsNearByResponse
 from com.precisely.apis.model.segmentation import Segmentation
 from com.precisely.apis.model.segmentation_themes import SegmentationThemes
+from com.precisely.apis.model.severity_group import SeverityGroup
 from com.precisely.apis.model.shore_line_distance import ShoreLineDistance
 from com.precisely.apis.model.sic import Sic
 from com.precisely.apis.model.sic_metadata import SicMetadata
