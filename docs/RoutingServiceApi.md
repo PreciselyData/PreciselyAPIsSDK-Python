@@ -25,7 +25,7 @@ Accepts addresses as input and Returns Point-to-Point and Multi-Point travel dir
 import time
 import com.precisely.apis
 from com.precisely.apis.api import routing_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.route_response import RouteResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -167,7 +167,7 @@ Accepts latitude & longitude as input and Returns Point-to-Point and Multi-Point
 import time
 import com.precisely.apis
 from com.precisely.apis.api import routing_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.route_response import RouteResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -307,7 +307,7 @@ Accepts addresses as input and Returns travel distances and times for multiple o
 import time
 import com.precisely.apis
 from com.precisely.apis.api import routing_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.travel_cost_matrix_response import TravelCostMatrixResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -435,7 +435,7 @@ Accepts latitude & longitude as input and Returns travel distances and times for
 import time
 import com.precisely.apis
 from com.precisely.apis.api import routing_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.travel_cost_matrix_response import TravelCostMatrixResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -533,7 +533,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

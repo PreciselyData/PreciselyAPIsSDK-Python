@@ -30,7 +30,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
 from com.precisely.apis.model.basic_boundary import BasicBoundary
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -130,7 +130,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
 from com.precisely.apis.model.basic_boundary import BasicBoundary
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -231,7 +231,7 @@ Gets Point of Interests Boundary by Address.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi_boundary import PoiBoundary
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -327,9 +327,9 @@ Batch method for getting Point of Interests Boundary by Address.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi_boundary_address_request import POIBoundaryAddressRequest
 from com.precisely.apis.model.poi_boundary_response import POIBoundaryResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -421,7 +421,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -449,7 +449,7 @@ Get Point of Interests Boundary by Location.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi_boundary import PoiBoundary
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -519,7 +519,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -547,8 +547,8 @@ Batch method for getting Point of Interests Boundary by Location.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi_boundary_response import POIBoundaryResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.poi_boundary_location_request import POIBoundaryLocationRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -619,7 +619,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -647,8 +647,8 @@ Returns the travel boundary based on travel distance.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.travel_boundaries import TravelBoundaries
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -761,8 +761,8 @@ Travel boundary based on travel time.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import zones_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.travel_boundaries import TravelBoundaries
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.

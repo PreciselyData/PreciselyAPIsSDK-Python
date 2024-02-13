@@ -22,8 +22,8 @@ Identifies and retrieves the nearest neighborhood around a specific location. Th
 import time
 import com.precisely.apis
 from com.precisely.apis.api import neighborhoods_service__api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.neighborhoods_response import NeighborhoodsResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

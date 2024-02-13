@@ -26,8 +26,8 @@ Accepts address as input and returns property parcel boundary around that addres
 import time
 import com.precisely.apis
 from com.precisely.apis.api import property_information_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.parcel_boundary_v2 import ParcelBoundaryV2
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -107,8 +107,8 @@ Accepts latitude/longitude as input and returns property parcel boundary around 
 import time
 import com.precisely.apis
 from com.precisely.apis.api import property_information_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.parcel_boundary_v2 import ParcelBoundaryV2
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -190,8 +190,8 @@ Accepts PB key as input and returns property attributes for the matched address.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import property_information_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.parcel_boundary_v2 import ParcelBoundaryV2
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -271,7 +271,7 @@ GetPropertyAttributesbyAddress Endpoint will take address as an input and will r
 import time
 import com.precisely.apis
 from com.precisely.apis.api import property_information_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.property_info_response import PropertyInfoResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -355,9 +355,9 @@ GetPropertyAttributesbyAddressBatch Endpoint will take the list of addresses as 
 import time
 import com.precisely.apis
 from com.precisely.apis.api import property_information_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.property_info_address_request import PropertyInfoAddressRequest
 from com.precisely.apis.model.property_info_responses import PropertyInfoResponses
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

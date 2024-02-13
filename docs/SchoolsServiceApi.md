@@ -22,8 +22,8 @@ Search Nearby Schools by Address
 import time
 import com.precisely.apis
 from com.precisely.apis.api import schools_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.schools_near_by_response import SchoolsNearByResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

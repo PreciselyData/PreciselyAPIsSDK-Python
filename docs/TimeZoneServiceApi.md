@@ -26,8 +26,8 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import time_zone_service_api
 from com.precisely.apis.model.timezone_location_request import TimezoneLocationRequest
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.timezone_response_list import TimezoneResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -92,8 +92,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -121,7 +121,7 @@ Identifies and retrieves the local time of any location in the world for a given
 import time
 import com.precisely.apis
 from com.precisely.apis.api import time_zone_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.timezone_response import TimezoneResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -217,8 +217,8 @@ Identifies and retrieves the local time of any location in the world for a given
 import time
 import com.precisely.apis
 from com.precisely.apis.api import time_zone_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.timezone_response_list import TimezoneResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.timezone_address_request import TimezoneAddressRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -249,7 +249,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
         address_time=[
             AddressTime(
                 timestamp="timestamp_example",
-                address=Address(
+                address=Address1(
                     object_id="object_id_example",
                     display_name="display_name_example",
                     street_side="street_side_example",
@@ -311,8 +311,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -340,7 +340,7 @@ Identifies and retrieves the local time of any location in the world for a given
 import time
 import com.precisely.apis
 from com.precisely.apis.api import time_zone_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.timezone_response import TimezoneResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

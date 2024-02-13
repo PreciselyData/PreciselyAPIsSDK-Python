@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **area_name1** | **str** |  | [optional] 
 **geometry** | [**Geometry**](Geometry.md) |  | [optional] 
 **area_code_info_list** | [**[AreaCodeInfo]**](AreaCodeInfo.md) |  | [optional] 
-**matched_address** | [**Address**](Address.md) |  | [optional] 
+**matched_address** | [**Address1**](Address1.md) |  | [optional] 
 **match** | [**Match**](Match.md) |  | [optional] 
 **county** | [**County**](County.md) |  | [optional] 
 **count** | **int** |  | [optional] 

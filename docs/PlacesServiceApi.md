@@ -30,7 +30,7 @@ This service returns a list of Category codes & associated metadata which can th
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.metadata_response import MetadataResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -114,7 +114,7 @@ This service returns complete details of a chosen point of interest by an identi
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi import Poi
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 Get POIs By Address.
 
-This service accepts an address as input and returns nearby points-of-interest places around that address. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON/XML as well as CSV download.
+This service accepts an address as input and returns nearby points-of-interest places around that address. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON as well as CSV download.
 
 ### Example
 
@@ -195,7 +195,7 @@ This service accepts an address as input and returns nearby points-of-interest p
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.places_response import PlacesResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 
 GET Points Of Interest By Area.
 
-This service accepts city or postcode (alongwith country) and returns points-of-interest places within a city or postcode. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON/XML as well as CSV download.
+This service accepts city or postcode (alongwith country) and returns points-of-interest places within a city or postcode. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON as well as CSV download.
 
 ### Example
 
@@ -313,7 +313,7 @@ This service accepts city or postcode (alongwith country) and returns points-of-
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.places_response import PlacesResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -421,7 +421,7 @@ Accepts a user-defined boundary as input and returns all Points of Interest with
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poiby_geometry_request import POIByGeometryRequest
 from com.precisely.apis.model.places_response import PlacesResponse
 from pprint import pprint
@@ -492,7 +492,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -510,7 +510,7 @@ Name | Type | Description  | Notes
 
 Get POIs By Location.
 
-This service accepts latitude/longitude as input and returns nearby points-of-interest places around that location. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON/XML as well as CSV download
+This service accepts latitude/longitude as input and returns nearby points-of-interest places around that location. Additional input features include retrieving data by name, type, standard industrial classifications and category codes, as well as geographic filtering by radius, travel times and travel distances. Response features include JSON as well as CSV download
 
 ### Example
 
@@ -520,7 +520,7 @@ This service accepts latitude/longitude as input and returns nearby points-of-in
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.places_response import PlacesResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -646,8 +646,8 @@ Accepts a user-defined boundary as input and returns the Count number of POIs wi
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.poi_count import PoiCount
-from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.poi_count_request import PoiCountRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -716,8 +716,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -745,7 +745,7 @@ This service returns a list of standard industrial classification codes & associ
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.metadata_response import MetadataResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -801,7 +801,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml, text/csv
+ - **Accept**: application/json, text/csv
 
 
 ### HTTP response details
@@ -829,7 +829,7 @@ This service accepts partial text input and returns matching points of interest,
 import time
 import com.precisely.apis
 from com.precisely.apis.api import places_service__api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.places_response import PlacesResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -933,7 +933,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

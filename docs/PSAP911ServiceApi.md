@@ -27,7 +27,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import psap_911_service_api
 from com.precisely.apis.model.ahj_plus_psap_response import AHJPlusPSAPResponse
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -108,7 +108,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import psap_911_service_api
 from com.precisely.apis.model.ahj_plus_psap_response import AHJPlusPSAPResponse
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -190,8 +190,8 @@ Accepts addresses as input and Returns contact details for local Public Safety A
 import time
 import com.precisely.apis
 from com.precisely.apis.api import psap_911_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.psap_response import PSAPResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -271,8 +271,8 @@ Accepts latitude & longitude as input and Returns contact details for local Publ
 import time
 import com.precisely.apis
 from com.precisely.apis.api import psap_911_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.psap_response import PSAPResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -355,7 +355,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import psap_911_service_api
 from com.precisely.apis.model.ahj_plus_psap_response import AHJPlusPSAPResponse
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.

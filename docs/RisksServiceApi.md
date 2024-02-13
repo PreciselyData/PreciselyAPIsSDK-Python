@@ -50,7 +50,7 @@ Accepts addresses as input and Returns local crime indexes.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.crime_risk_response import CrimeRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -146,7 +146,7 @@ import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.crime_risk_by_address_batch_request import CrimeRiskByAddressBatchRequest
 from com.precisely.apis.model.crime_risk_response_list import CrimeRiskResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -236,8 +236,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -265,7 +265,7 @@ Accepts latitude/longitude as input and returns and Returns local crime indexes.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.crime_risk_response import CrimeRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -362,7 +362,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.crime_risk_response_list import CrimeRiskResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.crime_risk_by_location_batch_request import CrimeRiskByLocationBatchRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -431,8 +431,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -460,7 +460,7 @@ Accepts addresses as input and Returns the distance from nearest water bodies al
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.water_body_response import WaterBodyResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -551,8 +551,8 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.distance_to_flood_hazard_response import DistanceToFloodHazardResponse
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.distance_to_flood_hazard_address_request import DistanceToFloodHazardAddressRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -644,8 +644,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -673,7 +673,7 @@ Accepts latitude & longitude as input and Returns the distance from nearest wate
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.water_body_response import WaterBodyResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -737,7 +737,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -766,7 +766,7 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.distance_to_flood_hazard_response import DistanceToFloodHazardResponse
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.distance_to_flood_hazard_location_request import DistanceToFloodHazardLocationRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -837,8 +837,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -866,8 +866,8 @@ Accepts postcode as input and Returns historical earthquake details for a partic
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.earthquake_history import EarthquakeHistory
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -938,7 +938,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -966,7 +966,7 @@ Accepts addresses as input and Returns counts of earthquakes for various richter
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.earthquake_risk_response import EarthquakeRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1032,7 +1032,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1060,8 +1060,8 @@ This is a Batch offering for 'Earthquake Risk By Address' service. It accepts a 
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.earthquake_risk_by_address_request import EarthquakeRiskByAddressRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.earthquake_risk_response_list import EarthquakeRiskResponseList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1153,8 +1153,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1182,7 +1182,7 @@ Accepts latitude & longitude as input and Returns counts of earthquakes for vari
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.earthquake_risk_response import EarthquakeRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1250,7 +1250,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1278,8 +1278,8 @@ This is a Batch offering for 'Earthquake Risk By Location' service. It accepts a
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.earthquake_risk_by_location_request import EarthquakeRiskByLocationRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from com.precisely.apis.model.earthquake_risk_response_list import EarthquakeRiskResponseList
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1349,8 +1349,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1378,7 +1378,7 @@ Accepts postcode as input and Returns fire event details for a particular postco
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_history import FireHistory
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1446,7 +1446,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1474,7 +1474,7 @@ Accepts postcode as input and Returns fire event details for a particular postco
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_history_v2 import FireHistoryV2
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -1570,8 +1570,8 @@ Accepts addresses as input and Returns fire risk data by risk types.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_response import FireRiskResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -1634,7 +1634,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1662,9 +1662,9 @@ This is a Batch offering for 'Fire Risk By Address' service. It accepts a single
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_by_address_request import FireRiskByAddressRequest
 from com.precisely.apis.model.fire_risk_response_list import FireRiskResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -1756,7 +1756,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1784,8 +1784,8 @@ Accepts latitude & longitude as input and Returns fire risk data by risk types.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_response import FireRiskResponse
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -1850,7 +1850,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1878,9 +1878,9 @@ This is a Batch offering for 'Fire Risk By Location' service. It accepts a singl
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_by_location_request import FireRiskByLocationRequest
 from com.precisely.apis.model.fire_risk_response_list import FireRiskResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -1950,7 +1950,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -1978,8 +1978,8 @@ Accepts addresses as input and Returns fire risk data by risk types.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_v2_response import FireRiskV2Response
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2071,8 +2071,8 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.fire_risk_v2_response_list import FireRiskV2ResponseList
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_by_address_request import FireRiskByAddressRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2192,8 +2192,8 @@ Accepts latitude & longitude as input and Returns fire risk data by risk types.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_v2_response import FireRiskV2Response
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2287,8 +2287,8 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.fire_risk_v2_response_list import FireRiskV2ResponseList
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_risk_by_location_request import FireRiskByLocationRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2386,7 +2386,7 @@ Accepts addresses as input and Returns nearest fire stations.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_stations import FireStations
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -2462,7 +2462,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -2490,7 +2490,7 @@ Accepts latitude & longitude as input and Returns nearest fire stations.
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.fire_stations import FireStations
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -2568,7 +2568,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -2596,7 +2596,7 @@ Accepts addresses as input and Returns flood risk data for flood zones and base 
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.flood_risk_response import FloodRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -2662,7 +2662,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -2690,9 +2690,9 @@ This is a Batch offering for 'Flood Risk By Address' service. It accepts a singl
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.flood_risk_response_list import FloodRiskResponseList
 from com.precisely.apis.model.flood_risk_by_address_request import FloodRiskByAddressRequest
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2783,8 +2783,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -2812,7 +2812,7 @@ Accepts latitude & longitude as input and Returns flood risk data for flood zone
 import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.flood_risk_response import FloodRiskResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -2880,7 +2880,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -2909,8 +2909,8 @@ import time
 import com.precisely.apis
 from com.precisely.apis.api import risks_service_api
 from com.precisely.apis.model.flood_risk_by_location_request import FloodRiskByLocationRequest
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.flood_risk_response_list import FloodRiskResponseList
-from com.precisely.apis.model.error_info import ErrorInfo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -2979,8 +2979,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, application/xml
- - **Accept**: application/json, application/xml
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 ### HTTP response details

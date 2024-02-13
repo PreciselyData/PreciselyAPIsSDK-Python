@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **phone** | **str** |  | [optional] 
 **website** | **str** |  | [optional] 
 **address_type** | **str** |  | [optional] 
-**address** | [**Address**](Address.md) |  | [optional] 
+**address** | [**Address1**](Address1.md) |  | [optional] 
 **lowest_grade** | **str** |  | [optional] 
 **highest_grade** | **str** |  | [optional] 
 **school_type** | **str** |  | [optional] 

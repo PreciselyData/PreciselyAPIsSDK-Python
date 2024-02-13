@@ -64,6 +64,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     search_type = "searchType_example" # str | Preference to control search type of interactive requests. (optional)
     search_on_address_number = "searchOnAddressNumber_example" # str | Preference to search on address number. (optional)
     search_on_unit_info = "searchOnUnitInfo_example" # str | Preference to search on unit info. (optional)
+    search_on_po_box = "searchOnPOBox_example" # str | Specifies whether to enable search for matching on PO Box. (optional)
 
     # example passing only required values which don't have defaults set
     try:
@@ -77,7 +78,7 @@ with com.precisely.apis.ApiClient(configuration) as api_client:
     # and optional values
     try:
         # Address Autocomplete Search
-        api_response = api_instance.search_v2(search_text, latitude=latitude, longitude=longitude, search_radius=search_radius, search_radius_unit=search_radius_unit, max_candidates=max_candidates, country=country, match_on_address_number=match_on_address_number, auto_detect_location=auto_detect_location, ip_address=ip_address, area_name1=area_name1, area_name3=area_name3, post_code=post_code, return_admin_areas_only=return_admin_areas_only, include_ranges_details=include_ranges_details, search_type=search_type, search_on_address_number=search_on_address_number, search_on_unit_info=search_on_unit_info)
+        api_response = api_instance.search_v2(search_text, latitude=latitude, longitude=longitude, search_radius=search_radius, search_radius_unit=search_radius_unit, max_candidates=max_candidates, country=country, match_on_address_number=match_on_address_number, auto_detect_location=auto_detect_location, ip_address=ip_address, area_name1=area_name1, area_name3=area_name3, post_code=post_code, return_admin_areas_only=return_admin_areas_only, include_ranges_details=include_ranges_details, search_type=search_type, search_on_address_number=search_on_address_number, search_on_unit_info=search_on_unit_info, search_on_po_box=search_on_po_box)
         pprint(api_response)
     except com.precisely.apis.ApiException as e:
         print("Exception when calling AddressAutocompleteServiceApi->search_v2: %s\n" % e)
@@ -106,6 +107,7 @@ Name | Type | Description  | Notes
  **search_type** | **str**| Preference to control search type of interactive requests. | [optional]
  **search_on_address_number** | **str**| Preference to search on address number. | [optional]
  **search_on_unit_info** | **str**| Preference to search on unit info. | [optional]
+ **search_on_po_box** | **str**| Specifies whether to enable search for matching on PO Box. | [optional]
 
 ### Return type
 

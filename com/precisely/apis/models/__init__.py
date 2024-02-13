@@ -17,6 +17,7 @@ from com.precisely.apis.model.absentee_owner import AbsenteeOwner
 from com.precisely.apis.model.accuracy import Accuracy
 from com.precisely.apis.model.address import Address
 from com.precisely.apis.model.address1 import Address1
+from com.precisely.apis.model.address2 import Address2
 from com.precisely.apis.model.address_time import AddressTime
 from com.precisely.apis.model.address_type import AddressType
 from com.precisely.apis.model.addresses_by_boundary_request import AddressesByBoundaryRequest
@@ -88,6 +89,7 @@ from com.precisely.apis.model.demographics_themes_v2 import DemographicsThemesV2
 from com.precisely.apis.model.depth import Depth
 from com.precisely.apis.model.direction_geometry import DirectionGeometry
 from com.precisely.apis.model.distance import Distance
+from com.precisely.apis.model.distance1 import Distance1
 from com.precisely.apis.model.distance_to_border import DistanceToBorder
 from com.precisely.apis.model.distance_to_flood_hazard_address_request import DistanceToFloodHazardAddressRequest
 from com.precisely.apis.model.distance_to_flood_hazard_location_request import DistanceToFloodHazardLocationRequest
@@ -109,6 +111,7 @@ from com.precisely.apis.model.employment_theme import EmploymentTheme
 from com.precisely.apis.model.energy_type import EnergyType
 from com.precisely.apis.model.error_code import ErrorCode
 from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.events_count import EventsCount
 from com.precisely.apis.model.expenditure_theme import ExpenditureTheme
 from com.precisely.apis.model.exterior_walls import ExteriorWalls
@@ -206,12 +209,14 @@ from com.precisely.apis.model.location import Location
 from com.precisely.apis.model.location_time import LocationTime
 from com.precisely.apis.model.magnitude import Magnitude
 from com.precisely.apis.model.match import Match
+from com.precisely.apis.model.match1 import Match1
 from com.precisely.apis.model.matched_address import MatchedAddress
 from com.precisely.apis.model.matrix import Matrix
 from com.precisely.apis.model.mcd import Mcd
 from com.precisely.apis.model.metadata_response import MetadataResponse
 from com.precisely.apis.model.mitigation_group import MitigationGroup
 from com.precisely.apis.model.name import Name
+from com.precisely.apis.model.name1 import Name1
 from com.precisely.apis.model.neighborhoods_response import NeighborhoodsResponse
 from com.precisely.apis.model.network import Network
 from com.precisely.apis.model.organization_type import OrganizationType
@@ -235,6 +240,7 @@ from com.precisely.apis.model.pbkey import Pbkey
 from com.precisely.apis.model.phone_verification import PhoneVerification
 from com.precisely.apis.model.phone_verification_output import PhoneVerificationOutput
 from com.precisely.apis.model.place import Place
+from com.precisely.apis.model.place1 import Place1
 from com.precisely.apis.model.places_response import PlacesResponse
 from com.precisely.apis.model.poi import Poi
 from com.precisely.apis.model.poi_boundary import PoiBoundary

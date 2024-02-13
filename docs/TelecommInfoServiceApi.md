@@ -23,7 +23,7 @@ Accepts addresses as input and returns Incumbent Local Exchange Carrier (ILEC) d
 import time
 import com.precisely.apis
 from com.precisely.apis.api import telecomm_info_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.rate_center_response import RateCenterResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -111,7 +111,7 @@ Accepts latitude & longitude as input and returns Incumbent Local Exchange Carri
 import time
 import com.precisely.apis
 from com.precisely.apis.api import telecomm_info_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.rate_center_response import RateCenterResponse
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details

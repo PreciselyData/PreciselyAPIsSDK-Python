@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | [**Address**](Address.md) |  | [optional] 
+**address** | [**Address1**](Address1.md) |  | [optional] 
 **phone** | **str** |  | [optional] 
 **fax** | **str** |  | [optional] 
 **country_access_code** | **str** |  | [optional] 

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **utc_offset** | **int** |  | [optional] 
 **dst_offset** | **int** |  | [optional] 
 **timestamp** | **int** |  | [optional] 
-**matched_address** | [**Address**](Address.md) |  | [optional] 
+**matched_address** | [**Address1**](Address1.md) |  | [optional] 
 **country** | **str** |  | [optional] 
 **tz_valid_from** | **str** |  | [optional] 
 **tz_valid_untill** | **str** |  | [optional] 

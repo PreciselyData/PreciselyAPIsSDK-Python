@@ -28,7 +28,7 @@ Demographics Advanced Endpoint will return the aggregated values of the selected
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.demographics_advanced_request import DemographicsAdvancedRequest
 from com.precisely.apis.model.demographics import Demographics
 from pprint import pprint
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -127,7 +127,7 @@ Demographics Basic Endpoint will return the aggregated values of the selected de
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.demographics import Demographics
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -235,7 +235,7 @@ Provides the demographic details around a specified address. GeoLife 'byaddress'
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.demographics import Demographics
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -307,7 +307,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -335,7 +335,7 @@ This endpoint will allow the user to request demographics details by census boun
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.demographics import Demographics
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -425,7 +425,7 @@ Provides the demographic details around a specified location. GeoLife 'bylocatio
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.demographics import Demographics
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -489,7 +489,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -517,7 +517,7 @@ Provides the segmentation details around a specified address. GeoLife 'Segmentat
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.segmentation import Segmentation
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -581,7 +581,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
@@ -609,7 +609,7 @@ Provides the segmentation details around a specified location. GeoLife 'segmenta
 import time
 import com.precisely.apis
 from com.precisely.apis.api import demographics_service_api
-from com.precisely.apis.model.error_info import ErrorInfo
+from com.precisely.apis.model.error_info1 import ErrorInfo1
 from com.precisely.apis.model.segmentation import Segmentation
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.precisely.com
@@ -664,7 +664,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, application/xml
+ - **Accept**: application/json
 
 
 ### HTTP response details
