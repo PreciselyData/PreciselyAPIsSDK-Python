@@ -112,7 +112,7 @@ class Address2(ModelNormal):
             'unit_type': (str,),  # noqa: E501
             'unit_value': (str,),  # noqa: E501
             'postal_verified': (str,),  # noqa: E501
-            'custom_fields': ({str: ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},)},),  # noqa: E501
+            'custom_fields': (dict,)   # noqa: E501
         }
 
     @cached_property
@@ -227,7 +227,7 @@ class Address2(ModelNormal):
             unit_type (str): [optional]  # noqa: E501
             unit_value (str): [optional]  # noqa: E501
             postal_verified (str): [optional]  # noqa: E501
-            custom_fields ({str: ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},)}): [optional]  # noqa: E501
+            custom_fields (dict,): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

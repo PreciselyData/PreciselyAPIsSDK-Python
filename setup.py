@@ -11,7 +11,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "com.precisely.apis"
-VERSION = "18.0.0"
+VERSION = "18.0.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -22,6 +22,7 @@ VERSION = "18.0.0"
 REQUIRES = [
   "urllib3 >= 1.25.3",
   "python-dateutil",
+  "requests"
 ]
 
 setup(
